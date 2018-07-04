@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>AppGarage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="ui container">
+      <div class="ui stackable menu">
+        <a class="item" href="/">
+          <img src="/logo.png">
+        </a>
+      </div>
+    </div>
+    <div class="ui container content">
+      <%= yield %>
+    </div>
   </body>
 </html>
