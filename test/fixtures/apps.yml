@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rating: 1.5
+  release_date: 2018-07-04 11:45:59
+  description: MyText
+  downloads: 1
+  rated_times: 1
+  author: MyString
+  version: 1.5
+
+two:
+  name: MyString
+  rating: 1.5
+  release_date: 2018-07-04 11:45:59
+  description: MyText
+  downloads: 1
+  rated_times: 1
+  author: MyString
+  version: 1.5

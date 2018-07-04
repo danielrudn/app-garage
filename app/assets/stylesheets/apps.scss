@@ -1,0 +1,17 @@
+// Place all the styles related to the Apps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ui.cards.app-cards {
+  flex-wrap: nowrap;
+
+  @media(max-width: 768px) {
+    overflow-x: scroll;
+    max-width: 100vw;
+
+    & .card {
+      min-width: 256px;
+    }
+  }
+
+}

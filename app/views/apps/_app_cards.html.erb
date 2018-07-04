@@ -1,0 +1,24 @@
+<h1 class="header"><%= name %></h1>
+<div class="ui divider"></div>
+<div class="ui link cards app-cards">
+  <% app_list.each do |app| %>
+    <a class="card" href="<%= app_path(app) %>">
+      <div class="image">
+        <img src="<%= app_image(app) %>">
+      </div>
+      <div class="content">
+        <div class="header"><%= app.name %></div>
+        <div class="meta"><%= app.author %></div>
+        <div class="description"><%= truncate app.description, length: 100, seperator: /\w+/ %></div>
+      </div>
+      <div class="extra content">
+        <span class="right floated">
+          <i class="star icon"></i> <%= app.rating %>
+        </span>
+        <span>
+          <i class="arrow alternate circle down outline icon"></i> <%= number_to_human app.downloads %>
+        </span>
+      </div>
+    </a>
+  <% end %>
+</div>

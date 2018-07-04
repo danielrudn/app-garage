@@ -1,0 +1,30 @@
+<div class="ui raised segment">
+  <h1 class="ui header"><%= params[:query] %> (<%= @apps.count %> results)</h1>  
+  <div class="ui divider"></div>
+  <div class="ui divided link items">
+    <% @apps.each do |app| %>
+      <a class="item" href="<%= app_path(app) %>">
+        <div class="small image">
+          <img src="<%= app_image(app) %>">
+        </div>
+        <div class="content">
+          <div class="header"><%= app.name %></div>
+          <div class="meta">
+            <span><%= app.author %></span>
+          </div>
+          <div class="description">
+            <p><%= truncate app.description, length: 250, seperator: /\w+/ %></p>
+          </div>
+          <div class="extra">
+            <div class="ui right floated primary button">
+              View More
+              <i class="right chevron icon"></i>
+            </div>
+            <div class="ui label"><i class="green arrow alternate circle down outline icon"></i> <%= number_to_human app.downloads %> Downloads</div>
+            <div class="ui label"><i class="yellow star icon"></i> <%= app.rating %> Rating</div>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</div>

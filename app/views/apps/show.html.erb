@@ -1,0 +1,64 @@
+<div class="ui padded raised segment">
+  <div class="ui items">
+    <div class="item">
+      <div class="image">
+        <img src="<%= app_image(@app) %>">
+      </div>
+      <div class="content">
+        <h1 class="header"><%= @app.name %></h1>
+        <div class="meta">
+          <span class="cinema"><%= @app.author %></span>
+        </div>
+        <div class="meta">
+          <span class="version">Version <%= @app.version %></span>
+        </div>
+        <div class="meta">
+          <span class="release">Released <%= @app.release_date.strftime("%F") %></span>
+        </div>
+        <div class="bottom aligned content">
+          <button class="ui primary button" disabled>Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui three small statistics">
+    <div class="statistic">
+      <div class="value">
+        <i class="small green arrow alternate circle down outline icon"></i> <%= number_to_human @app.downloads %>
+      </div>
+      <div class="label">
+        Downloads
+      </div>
+    </div>
+    <div class="statistic">
+      <div class="value">
+        <i class="small yellow star icon"></i> <%= @app.rating %>
+      </div>
+      <div class="label">
+        Stars
+      </div>
+    </div>
+    <div class="statistic">
+      <div class="value">
+        <i class="small users icon"></i> <%= number_with_delimiter @app.rated_times %>
+      </div>
+      <div class="label">
+        Ratings
+      </div>
+    </div>
+  </div>
+  <div class="ui divider"></div>
+  <h2 class="header">Description</h2>
+  <div>
+    <p><%= @app.description %></p>
+  </div>
+  <div class="ui divider"></div>
+  <h2 class="header">Screenshots</h2>
+  <div style="overflow-x: scroll; display: flex;">
+    <img src="https://dummyimage.com/420x320/ff7f7f/333333.png&text=Sample 1" >
+    <img src="https://dummyimage.com/420x320/7f7fff/333333.png&text=Sample 2" >
+    <img src="https://dummyimage.com/420x320/7fff7f/333333.png&text=Sample 3" >
+    <img src="https://dummyimage.com/420x320/7f7f7f/333333.png&text=Sample 4" >
+  </div>
+</div>
