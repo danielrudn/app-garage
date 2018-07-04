@@ -1,0 +1,13 @@
+<div class="ui raised segment search-container">
+  <img class="ui centered medium image" src="/logo-text.png" >
+</div>
+<div class="ui raised segment no padding">
+  <form method="GET" action="search">
+    <div class="ui fluid icon transparent large input">
+      <input name="query" type="text" placeholder="Search apps...">
+    <i class="search icon"></i>
+    </div>
+  </form>
+</div>
+<%= render partial: "apps/app_cards", locals: { name: "Most Downloaded", app_list: @most_downloaded } %>
+<%= render partial: "apps/app_cards", locals: { name: "Highest Rated", app_list: @highest_rated } %>

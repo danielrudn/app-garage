@@ -15,3 +15,14 @@
  */
  
 @import "semantic-ui";
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  & .ui {
+    margin-top: 16px;
+    flex: 1;
+  }
+}
