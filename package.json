@@ -6,7 +6,8 @@
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-on-rails": "^11.0.9"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

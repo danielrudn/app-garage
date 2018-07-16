@@ -4799,6 +4799,10 @@ react-dom@^16.4.1:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-on-rails@^11.0.9:
+  version "11.0.9"
+  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-11.0.9.tgz#6e292e14fdd01acc0d21498e78217de9e09b354c"
+
 react@^16.4.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
