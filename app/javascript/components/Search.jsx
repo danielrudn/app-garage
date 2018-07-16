@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import SearchResultList from './SearchResultList';
 
 export default class Search extends React.Component {
   state = { loading: false, results: [] };
@@ -17,6 +18,7 @@ export default class Search extends React.Component {
   }
 
   render() {
+    const { loading, results } = this.state;
     return (
       <div className="ui raised segment no padding">
         <form method="GET" action="search">
@@ -26,6 +28,7 @@ export default class Search extends React.Component {
               <i className="search icon"></i>
             </button>
           </div>
+          {results.length > 0 || loading ? <SearchResultList results={results} loading={loading} /> : null}
         </form>
       </div>
     );
