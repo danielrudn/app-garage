@@ -26,3 +26,20 @@
     flex: 1;
   }
 }
+
+form[action="search"] button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ui.stackable.menu {
+  @media (max-width: 768px) {
+    .item, .right.menu {
+      display: none;
+    }
+    .header.item {
+      display: block;
+    }
+  }
+}
